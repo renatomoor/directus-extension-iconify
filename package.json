@@ -1,0 +1,57 @@
+{
+  "name": "directus-extension-iconify",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Iconify dropdown extension for Directus",
+  "author": "Renato Moor <renatomoor1@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatomoor/directus-extension-iconify"
+  },
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-bundle"
+  ],
+  "icon": "extension",
+  "directus:extension": {
+    "host": "^10.2.0",
+    "type": "bundle",
+    "path": {
+      "app": "dist/app.js",
+      "api": "dist/api.js"
+    },
+    "entries": [
+      {
+        "type": "interface",
+        "name": "iconify-dropdown",
+        "source": "src/iconify-dropdown/index.ts"
+      },
+      {
+        "type": "display",
+        "name": "iconify-icon",
+        "source": "src/iconify-icon/index.ts"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link",
+    "add": "directus-extension add",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --fix .",
+    "release": "pnpm build && release-it"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.1.2",
+    "@directus/extensions-sdk": "10.2.0",
+    "@iconify/vue": "^4.1.1",
+    "@release-it/conventional-changelog": "7.0.2",
+    "eslint": "^8.54.0",
+    "release-it": "16.2.1",
+    "typescript": "^5.3.2",
+    "vue": "^3.3.9",
+    "vue-multiselect": "3.0.0-beta.3"
+  }
+}
