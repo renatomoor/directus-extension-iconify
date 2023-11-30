@@ -1,7 +1,7 @@
 {
   "name": "directus-extension-iconify",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Iconify dropdown extension for Directus",
   "author": "Renato Moor <renatomoor1@gmail.com>",
   "repository": {
