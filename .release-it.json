@@ -1,5 +1,5 @@
 {
-  "gitlab": {
+  "github": {
     "release": true,
     "releaseName": "Release ${version}"
   },
