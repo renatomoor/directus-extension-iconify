@@ -34,6 +34,7 @@
       }
     ]
   },
+  "files": ["dist"],
   "scripts": {
     "build": "directus-extension build",
     "dev": "directus-extension build -w --no-minify",
